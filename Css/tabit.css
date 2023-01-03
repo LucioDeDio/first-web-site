@@ -1,0 +1,245 @@
+
+body
+{	margin: 0;
+	padding: 0;
+	background: #000;
+	font-family: 'Saira Condensed', sans-serif;
+	background-color: #080601;
+	color: whitesmoke;
+}
+
+:root{
+    --colorRed:#ee2a1c;
+	--colorWhite: whitesmoke;
+	--colorBlack: #000;
+}
+
+/*COLOR DE LAS FUENTES*/
+.textColor
+{
+	color: var(--colorRed);
+}
+.colorWhite{
+	color: var(--colorWhite);
+}
+.bgColor
+{
+	background-color: var(--colorRed);
+}
+.bgColor:hover{
+	background-color: var(--colorBlack);
+	transition: all .5s ease-in-out;
+}
+/*NAVBAR SCROLLED*/
+.bg-dark
+{
+	background:transparent !important;
+}
+
+.bg-dark.scrolled
+{
+	background-color: var(--colorBlack) !important;
+	opacity: 0.9;
+	/* -webkit-transition: .7s;
+	-moz-transition: .7s;
+	-o-transition: .7s;
+	*/
+}
+
+/* LOGO */
+.imgLogo2
+{
+	padding-top: 0.5em;
+	width: 9em;
+
+}
+.imgLogo{
+    width: 4.5em;
+    /* float: left; */
+}
+
+
+
+
+
+/*NAVBAR LINK HOVER*/
+.nav-link:hover
+{
+	text-shadow: 0 .1px 0 var(--colorWhite);
+	transition: all 1s ease-in-out;
+	transform: scale(1.05);
+}
+.colorHover:hover{
+	color: var(--colorRed);
+	transition: all .5s ease-in-out;
+}
+
+/*BANNER JOMBOTRON*/
+.big-banner
+{
+	margin: 0;
+	padding: 0;
+	background-size: cover;
+	background-position: center ;
+	background-repeat: no-repeat;
+	background-image: url('../Img/414.jpg');
+	background-position: center;
+	height: 100vh;
+}
+
+.pad-banner
+{
+	margin-top: 0;
+	padding-top: 20vh;
+}
+
+/* banner effect */
+.box{
+	position: absolute;
+	top: 95%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.box span{
+	display: block;
+	width: 1em;
+	height: 1em;
+	border-bottom: 3px solid var(--colorRed);
+	border-right: 3px solid var(--colorRed);
+	border-radius: 3px;
+	transform: rotate(45deg);
+	margin: -10px;
+	animation: animate 2s infinite;
+}
+.box span:nth-child(2){
+	animation-delay: -.2s;
+}
+.box span:nth-child(3){
+	animation-delay: -.4s;
+	
+}
+@keyframes animate{
+	0%{
+		opacity: 0;
+		transform: rotate(45deg) translate(-20px, -20px);
+
+	}
+	50%{
+		opacity: 1;
+
+	}
+	100%{
+		opacity: 0;
+		transform: rotate(45deg) translate(20px, 20px);
+
+	}
+}
+
+/* ABOUT SECTION*/
+
+.fa-item{
+	background-color: var(--colorBlack);
+	color: var(--colorWhite);
+}
+
+
+/*RESPONSIVE PHOTO*/
+.photoWrapper
+{
+	max-width: 20em;
+}
+.imgStaff
+{
+	width: 100%;
+	border: 2px solid var(--colorWhite);
+}
+
+/*PARALLAX EFFECT*/
+.parallax
+{
+	background: url('../Img/consola.jpg') repeat fixed 100%;
+	background-size: 100%;
+	background-repeat: repeat;
+}
+
+.parallaxInner
+{
+	padding-top: 8%;
+	padding-bottom: 8%;
+}
+
+
+.imgServWrapper
+{
+	max-width: 12.5em;
+	max-height: 12.5em;
+}
+
+.imgServ
+{
+	width: 100%;
+	height: 100%;
+}
+
+.imgServ:hover
+{
+	/* filter: blur(3px); */
+	filter: grayscale(1);
+	filter: saturate(2.2);
+	filter: invert();
+	/* filter: sepia();
+	*/
+	transition: filter 1s;
+}
+
+/*PARALLAX EFFECT*/
+.parallaxContac
+{
+	background: url('../Img/portada.jpg') repeat fixed 100%;
+	background-size: 100%;
+	background-repeat: repeat;
+}
+
+.parallaxInnerContac
+{
+	padding-top: 8%;
+	padding-bottom: 8%;
+}
+
+/*RESPONSIVE MAPS*/
+
+.googlemap
+{
+	width: 100%;
+	border: 1px solid var(--colorWhite);
+}
+
+.mapwrapper{
+	width: 70vw;
+	height: 50vh;
+}
+.mapwrapper:hover{
+	transform: scale(1.1);
+	transition: all .5s ease-in-out;
+}
+
+/*FORM HOVER*/
+.formHover:hover{
+	background-color: var(--colorBlack);
+	color: var(--colorWhite);
+	transition: all .5s ease-in-out;
+}
+
+
+/*FOOTER*/
+.bgFooter{
+	background-color: var(--colorBlack);
+}
+.link-container:hover{
+	color: var(--colorBlack);
+}
+.itemHover:hover{
+	transform: scale(1.05);
+	
+	/* background-color: var(--colorWhite); */
+}
